@@ -99,6 +99,7 @@ form p {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    display: none;
 }
 
 .login div {
@@ -154,15 +155,15 @@ form p {
     transition: all ease-in 0.5s;
 }
 
-.cerrar-login h3 {
+/* .cerrar-login h3 {
     margin-top: 340px;
     transition: all ease-in 1s;
-}
+} */
 
 .cerrar-login section {
+    display: none;
     transform: translateY(200px);
     transition: ease-in-out all 2s;
-    opacity: 0;
 }   
 
 
