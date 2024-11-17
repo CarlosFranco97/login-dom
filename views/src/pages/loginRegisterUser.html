@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/loginRegisterUser.css">
+    <title>Inicio sesion/Registro</title>
 </head>
+
 <body>
-    <h2>Hola</h2>
+    <form class="registro" id="registro" action="">
+        <h3 id="abrir-registro">Registro</h3>
+        <div>
+            <label for="">Usuario</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Correo</label>
+            <input type="email">
+        </div>
+        <div>
+            <label for="">Contraseña</label>
+            <input type="password">
+        </div>
+        <div>
+            <label for="">Confirme Contraseña</label>
+            <input type="password">
+        </div>
+        <p>
+            Ya tienes cuenta?
+        </p>
+        <button type="button">
+            Registrarse
+        </button>
+    </form>
+    <form class="login" id="login" action="">
+        <h3 id="abrir-login">Iniciar sesion</h3>
+            <section>
+                <div>
+                    <label for="">Usuario</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="">Contraseña</label>
+                    <input type="password">
+                </div>
+                <p>
+                    No tienes cuenta?
+                </p>
+                <button type="button">
+                    Iniciar sesion
+                </button>
+            </section>
+    </form>
+    <script type="module" src="../js/scriptLoginRegisterUser.js"></script>
 </body>
+
 </html>
