@@ -29,7 +29,7 @@ form p {
 /* regisro */
 
 .registro {
-    position: absolute;
+    /* position: absolute; */
     background-color: #38014b;
     display: flex;
     flex-direction: column;
@@ -76,9 +76,8 @@ form p {
 
 /* login */
 .login {
-    z-index: 1;
-    background-color: white;
     position: absolute;
+    background-color: white;
     bottom: 90px;
     display: flex;
     flex-direction: column;
@@ -144,7 +143,7 @@ form p {
 
 .abrir-login {
     height: 63%;
-    transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.8s;
     
 }
 
@@ -158,7 +157,7 @@ form p {
 
 .cerrar-login {
     height: 80px;
-    transition: all ease-in 0.5s;
+    transition: all ease-in-out 0.8s;
 }
 
 
@@ -169,6 +168,6 @@ form p {
     overflow: hidden;
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s;
     transition: ease-in-out all 2s;
-}   
+}    
 
 
