@@ -11,8 +11,8 @@ body {
     align-items: center;
     height: 100vh;
     min-width: 100vh;
-    background: rgb(148,0,240);
-    background: linear-gradient(180deg, rgba(148,0,240,1) 0%, rgba(81,0,168,1) 50%, rgba(148,0,240,1) 100%);
+    background: rgb(32,28,71);
+    background: linear-gradient(180deg, rgba(32,28,71,1) 0%, rgba(66,61,108,1) 50%, rgba(32,28,71,1) 100%);
 }
 
 .contenedor-formularios {
@@ -30,15 +30,10 @@ form h3 {
     cursor: pointer;
 }
 
-form p {
-    font-size: 1.3em;
-    letter-spacing: 2px;
-}
-
 /* regisro */
 
 .registro {
-    background-color: #38014b;
+    background-color: #201c47;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -162,6 +157,7 @@ form p {
     border-radius: 10px;
     background-color: #E0DEDE;
     border: 1px solid gainsboro;
+    padding: 10px;
 }
 
 .login div label { 
