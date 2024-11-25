@@ -15,6 +15,15 @@ body {
     background: linear-gradient(180deg, rgba(148,0,240,1) 0%, rgba(81,0,168,1) 50%, rgba(148,0,240,1) 100%);
 }
 
+.contenedor-formularios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
 form h3 {
     letter-spacing: 2px;
     font-size: 1.6em;
@@ -29,18 +38,28 @@ form p {
 /* regisro */
 
 .registro {
-    /* position: absolute; */
     background-color: #38014b;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     width: 25%;
-    height: 80%;
+    height: 100%;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0.5);
     color: #fcf3ff;
+}
+
+.titulo-registro {
+    margin: 30px 0 40px 0;
+    font-size: 2em;
+    transition: all 0.5s ease-in-out;
+}
+
+.titulo-registro-cerrar {
+    font-size: 1.5em;
+    transition:  all 0.5s ease-in-out;
 }
 
 .registro div {
@@ -48,12 +67,21 @@ form p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     width: 100%;
 }
 
 .registro div input {
-    width: 60%;
+    width: 70%;
+    height: 45px;
+    outline: white;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.registro select {
+    width: 70%;
     height: 45px;
     outline: white;
     border-radius: 10px;
@@ -67,21 +95,28 @@ form p {
     letter-spacing: 2px;
 }
 
+
 .registro button {
     font-size: 1.3em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     width: 60%;
     height: 10%;
+    background-color: #573B8A;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: bolder;
+    margin-top: 10px;
 }
 
 /* login */
 .login {
     position: absolute;
     background-color: white;
-    bottom: 90px;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 60px;
     width: 25%;
@@ -89,25 +124,27 @@ form p {
     padding: 10px;
     height: 80px;
     border-radius: 0px 0px 15px 15px;
+    
 }
 
 .login h3 {
-    position: relative;
-    margin-top: 50px;
+    margin-top: 12px;
+    color: #573B8A;
 }
 
 .login section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 30px;
     align-items: center;
-    gap: 10px;
     opacity: 0;
     max-height: 0;
     visibility: hidden; 
     overflow: hidden;
     transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s;
+    height: 100%;
 }
 
 .login div {
@@ -115,7 +152,6 @@ form p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     width: 100%;
 }
 
@@ -124,6 +160,7 @@ form p {
     height: 45px;
     outline: white;
     border-radius: 10px;
+    background-color: #E0DEDE;
     border: 1px solid gainsboro;
 }
 
@@ -139,12 +176,22 @@ form p {
     letter-spacing: 2px;
     width: 60%;
     height: 50px;
+    border: none;
+    background-color: #573B8A;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
 }
 
 .abrir-login {
-    height: 63%;
+    height: 85%;
     transition: all ease-in-out 0.8s;
     
+}
+
+.abrir-login h3 {
+    font-size: 2em;
+    transition: all 0.5s ease-in-out;
 }
 
 .abrir-login section {
@@ -153,13 +200,10 @@ form p {
     visibility: visible; 
 }
 
-
-
 .cerrar-login {
     height: 80px;
     transition: all ease-in-out 0.8s;
 }
-
 
 .cerrar-login section {
     opacity: 0;

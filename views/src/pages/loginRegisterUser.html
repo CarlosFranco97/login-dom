@@ -9,50 +9,50 @@
 </head>
 
 <body>
-    <form class="registro" id="registro" action="">
-        <h3 id="abrir-registro">Registro</h3>
-        <div>
-            <label for="">Usuario</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="">Correo</label>
-            <input type="email">
-        </div>
-        <div>
-            <label for="">Contraseña</label>
-            <input type="password">
-        </div>
-        <div>
-            <label for="">Confirme Contraseña</label>
-            <input type="password">
-        </div>
-        <p>
-            Ya tienes cuenta?
-        </p>
-        <button type="button">
-            Registrarse
-        </button>
-    </form>
-    <form class="login" id="login" action="">
-        <h3 id="abrir-login">Iniciar sesion</h3>
-            <section>
-                <div>
-                    <label for="">Usuario</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Contraseña</label>
-                    <input type="password">
-                </div>
-                <p>
-                    No tienes cuenta?
-                </p>
-                <button type="button">
-                    Iniciar sesion
-                </button>
-            </section>
-    </form>
+    <div class="contenedor-formularios"> 
+        <form class="registro" id="registro" action="">
+            <h3 id="abrir-registro" class="titulo-registro">Registro</h3>
+            <div>
+                <!-- <label for="">Usuario</label> -->
+                <input placeholder="User name" type="text">
+            </div>
+            <div>
+                <!-- <label for="">Correo</label> -->
+                <input placeholder="Correo electrónico" type="email">
+            </div>
+            <div>
+                <!-- <label for="">Contraseña</label> -->
+                <input placeholder="Contraseña" type="password">
+            </div>
+            <div>
+                <!-- <label for="">Confirme Contraseña</label> -->
+                <input placeholder="Edad" type="number">
+            </div>
+            <select name="" id="">
+                <option value="">Masculino</option>
+                <option value="">Femenino</option>
+            </select>
+            <button>
+                Registrarme
+            </button>
+        </form>
+        <form class="login" id="login" action="">
+            <h3 id="abrir-login">Iniciar sesion</h3>
+                <section>
+                    <div>
+                        <!-- <label for="">Usuario</label> -->
+                        <input type="text">
+                    </div>
+                    <div>
+                        <!-- <label for="">Contraseña</label> -->
+                        <input type="password">
+                    </div>
+                    <button type="button">
+                        Iniciar sesion
+                    </button>
+                </section>
+        </form>
+    </div>
     <script type="module" src="../js/scriptLoginRegisterUser.js"></script>
 </body>
 
